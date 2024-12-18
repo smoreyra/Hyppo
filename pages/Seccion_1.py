@@ -3,6 +3,7 @@ import pandas as pd
 import altair as alt
 import numpy as np
 from urllib.error import URLError
+from pathlib import Path
 
 # Configuración de la página
 st.set_page_config(
@@ -94,10 +95,11 @@ def load_data():
     try:
         # Cargar datasets desde archivos CSV
         # Transacciones del período 2023 y 2024 hasta octubre
-        df_bd_orders = pd.read_csv('bd_orders.csv')
+        file_path = Path('bd_orders.csv')
+        df_bd_orders = pd.read_csv(file_path)
 
         # Base de datos de descargas de la app desde Diciembre 2022 en adelante
-        df_BD_signups = pd.read_csv('BD_signups.xlsx')
+        df_BD_signups = pd.read_csv('/mount/src/hyppo/pages/BD_signups.csv')
 
         return df_bd_orders, df_BD_signups
     
