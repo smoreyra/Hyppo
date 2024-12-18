@@ -108,7 +108,7 @@ def load_data():
         df_BD_signups = pd.read_csv('pages/BD_signups - results-20241024-105624.csv')
         
         # Convertir la columna de fechas a datetime
-        df_bd_orders['fecha_registro_formatted'] = pd.to_datetime(df_bd_orders['fecha_registro_formatted'], errors='coerce')
+        df_BD_signups['fecha_registro_formatted'] = pd.to_datetime(df_BD_signups['fecha_registro_formatted'], errors='coerce')
 
         return df_BD_campaigns_Q3, df_bd_orders, df_BD_signups
     
