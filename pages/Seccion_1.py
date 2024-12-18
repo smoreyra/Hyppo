@@ -97,11 +97,7 @@ def load_data():
         df_bd_orders = pd.read_csv('bd_orders.csv')
 
         # Base de datos de descargas de la app desde Diciembre 2022 en adelante
-<<<<<<< HEAD
         df_BD_signups = pd.read_csv('BD_signups.csv')
-=======
-        df_BD_signups = pd.read_csv('BD_signups.xlsx')
->>>>>>> parent of 52c4a28 (Changed Path)
 
         return df_bd_orders, df_BD_signups
     

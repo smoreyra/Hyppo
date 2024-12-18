@@ -95,7 +95,7 @@ def load_data():
         # Cargar datasets desde archivos CSV
         # Campañas de envíos automatizados de comunicaciones que tuvo prendida 
         # el cliente durante Q3 2024 con un detalle de los envíos realizados
-<<<<<<< HEAD
+
         df_BD_campaigns_Q3 = pd.read_csv('bd_campaigns_q3.csv')
 
         # Transacciones del período 2023 y 2024 hasta octubre
@@ -103,15 +103,6 @@ def load_data():
 
         # Base de datos de descargas de la app desde Diciembre 2022 en adelante
         df_BD_signups = pd.read_csv('BD_signups.csv')
-=======
-        df_BD_campaigns_Q3 = pd.read_csv('bd_campaigns_q3.xlsx')
-
-        # Transacciones del período 2023 y 2024 hasta octubre
-        df_bd_orders = pd.read_csv('bd_orders.xlsx')
-
-        # Base de datos de descargas de la app desde Diciembre 2022 en adelante
-        df_BD_signups = pd.read_csv('BD_signups.xlsx')
->>>>>>> parent of 52c4a28 (Changed Path)
 
         return df_BD_campaigns_Q3, df_bd_orders, df_BD_signups
     
