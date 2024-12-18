@@ -92,16 +92,16 @@ st.write(
 @st.cache_data
 def load_data():
     try:
-        # Cargar datasets desde archivos Excel
+        # Cargar datasets desde archivos CSV
         # Campañas de envíos automatizados de comunicaciones que tuvo prendida 
         # el cliente durante Q3 2024 con un detalle de los envíos realizados
-        df_BD_campaigns_Q3 = pd.read_excel('bd_campaigns_q3.xlsx', engine='openpyxl')
+        df_BD_campaigns_Q3 = pd.read_csv('bd_campaigns_q3.xlsx')
 
         # Transacciones del período 2023 y 2024 hasta octubre
-        df_bd_orders = pd.read_excel('bd_orders.xlsx', engine='openpyxl')
+        df_bd_orders = pd.read_csv('bd_orders.xlsx')
 
         # Base de datos de descargas de la app desde Diciembre 2022 en adelante
-        df_BD_signups = pd.read_excel('BD_signups.xlsx', engine='openpyxl')
+        df_BD_signups = pd.read_csv('BD_signups.xlsx')
 
         return df_BD_campaigns_Q3, df_bd_orders, df_BD_signups
     
