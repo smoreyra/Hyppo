@@ -95,13 +95,13 @@ def load_data():
         # Cargar datasets desde archivos Excel
         # Campañas de envíos automatizados de comunicaciones que tuvo prendida 
         # el cliente durante Q3 2024 con un detalle de los envíos realizados
-        df_BD_campaigns_Q3 = pd.read_excel('../bd_campaigns_q3.xlsx', engine='openpyxl')
+        df_BD_campaigns_Q3 = pd.read_excel('bd_campaigns_q3.xlsx', engine='openpyxl')
 
         # Transacciones del período 2023 y 2024 hasta octubre
-        df_bd_orders = pd.read_excel('../bd_orders.xlsx', engine='openpyxl')
+        df_bd_orders = pd.read_excel('bd_orders.xlsx', engine='openpyxl')
 
         # Base de datos de descargas de la app desde Diciembre 2022 en adelante
-        df_BD_signups = pd.read_excel('../BD_signups.xlsx', engine='openpyxl')
+        df_BD_signups = pd.read_excel('BD_signups.xlsx', engine='openpyxl')
 
         return df_BD_campaigns_Q3, df_bd_orders, df_BD_signups
     

@@ -94,10 +94,10 @@ def load_data():
     try:
         # Cargar datasets desde archivos Excel
         # Transacciones del período 2023 y 2024 hasta octubre
-        df_bd_orders = pd.read_excel('../bd_orders.xlsx', engine='openpyxl')
+        df_bd_orders = pd.read_excel('bd_orders.xlsx', engine='openpyxl')
 
         # Base de datos de descargas de la app desde Diciembre 2022 en adelante
-        df_BD_signups = pd.read_excel('../BD_signups.xlsx', engine='openpyxl')
+        df_BD_signups = pd.read_excel('BD_signups.xlsx', engine='openpyxl')
 
         return df_bd_orders, df_BD_signups
     
