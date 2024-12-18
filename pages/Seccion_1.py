@@ -95,11 +95,10 @@ def load_data():
     try:
         # Cargar datasets desde archivos CSV
         # Transacciones del período 2023 y 2024 hasta octubre
-        file_path = Path('bd_orders.csv')
-        df_bd_orders = pd.read_csv(file_path)
+        df_bd_orders = pd.read_csv('bd_orders.csv')
 
         # Base de datos de descargas de la app desde Diciembre 2022 en adelante
-        df_BD_signups = pd.read_csv('/mount/src/hyppo/pages/BD_signups.csv')
+        df_BD_signups = pd.read_csv('BD_signups.csv')
 
         return df_bd_orders, df_BD_signups
     
